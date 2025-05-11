@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1600" height="3200" viewBox="0 0 1600 3200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>CryptoTech Pro Wireframes v2</title>
+  <defs>
+    <!-- Glass effect for cards -->
+    <filter id="glass-effect" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="glass" />
+      <feComposite in="SourceGraphic" in2="glass" operator="atop"/>
+    </filter>
+    
+    <!-- Hexagon shape for icon -->
+    <clipPath id="hexagon-clip">
+      <path d="M75,0 L150,43.3 L150,129.9 L75,173.2 L0,129.9 L0,43.3 Z" />
+    </clipPath>
+    
+    <!-- Gradient for primary button -->
+    <linearGradient id="button-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#007BFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0056b3;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient for gold premium plan -->
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Background pattern -->
+    <pattern id="hex-pattern" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M50,0 L75,43.3 L50,86.6 L25,43.3 Z" fill="none" stroke="#ffffff" stroke-opacity="0.08" />
+    </pattern>
+    
+    <!-- Graph pattern -->
+    <linearGradient id="chart-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#28A745;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#28A745;stop-opacity:0" />
+    </linearGradient>
+    
+    <!-- Graph down pattern -->
+    <linearGradient id="chart-down-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#DC3545;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#DC3545;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1600" height="3200" fill="#1A1F36" />
+  <rect x="0" y="0" width="1600" height="3200" fill="url(#hex-pattern)" />
+  
+  <!-- ================= HOMEPAGE DESIGN ================= -->
+  <g id="homepage" transform="translate(0,0)">
+    <!-- Header/Navigation -->
+    <rect x="0" y="0" width="1600" height="80" fill="#2D3748" />
+    
+    <!-- Professional Icon with glass effect -->
+    <g transform="translate(30, 10)" clip-path="url(#hexagon-clip)" style="transform-origin: center; transform: scale(0.4);">
+      <rect x="0" y="0" width="150" height="173.2" fill="#0056b3" opacity="0.7" />
+      <rect x="0" y="0" width="150" height="173.2" fill="url(#glass-effect)" />
+      <!-- Data flow visualization in icon -->
+      <path d="M75,30 L120,50 L90,80 L120,110 L75,140 L30,110 L60,80 L30,50 Z" fill="#007BFF" opacity="0.6" />
+      <path d="M75,40 L105,65 L75,90 L45,65 Z" fill="#ffffff" opacity="0.8" />
+    </g>
+    
+    <!-- Brand name -->
+    <!-- Brand name with custom font treatment -->
+    <defs>
+      <filter id="brand-glow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.4   0 1 0 0 0.4   0 0 1 0 1  0 0 0 1 0"/>
+        <feMerge>
+          <feMergeNode in="blur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+    </defs>
+    <text x="100" y="50" font-family="Clash Display, sans-serif" font-size="24" font-weight="900" fill="#ffffff" filter="url(#brand-glow)" letter-spacing="1.2">CryptoTech Pro</text>
+    
+    <!-- Market ticker -->
+    <rect x="350" y="30" width="370" height="30" rx="15" ry="15" fill="#242B42" stroke="#343F59" stroke-width="1" />
+    <text x="370" y="50" font-family="Inter, sans-serif" font-size="14" fill="#28A745">BTC +2.3%</text>
+    <text x="460" y="50" font-family="Inter, sans-serif" font-size="14" fill="#DC3545">ETH -0.8%</text>
+    <text x="550" y="50" font-family="Inter, sans-serif" font-size="14" fill="#28A745">BNB +1.5%</text>
+    
+    <!-- Navigation links -->
+    <g id="nav-links">
+      <rect x="990" y="30" width="80" height="30" rx="5" ry="5" fill="#0056b3" opacity="0.5" />
+      <text x="1020" y="50" font-family="Inter, sans-serif" font-size="15" fill="#ffffff" text-anchor="middle">首頁</text>
+      
+      <text x="1120" y="50" font-family="Inter, sans-serif" font-size="15" fill="#ffffff" text-anchor="middle">投資方案</text>
+      
+      <rect x="1200" y="30" width="100" height="30" rx="5" ry="5" fill="url(#button-gradient)" />
+      <text x="1250" y="50" font-family="Inter, sans-serif" font-size="15" fill="#ffffff" text-anchor="middle">立即註冊</text>
+    </g>
+    
+    <!-- Hero Section -->
+    <g id="hero-section">
+      <rect x="0" y="80" width="1600" height="600" fill="#1A1F36" />
+      
+      <!-- Left side content -->
+      <text x="150" y="220" font-family="Clash Display, sans-serif" font-size="48" font-weight="bold" fill="#ffffff">專業級加密貨幣投資平台</text>
+      <text x="150" y="280" font-family="Inter, sans-serif" font-size="18" fill="#A0AEC0">安全可靠 • 即時交易 • 專家策略</text>
+      
+      <!-- CTA Button -->
+      <rect x="150" y="330" width="180" height="56" rx="8" ry="8" fill="url(#button-gradient)" />
+      <text x="240" y="368" font-family="Inter, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">開始投資</text>
+      
+      <!-- Right side data visualization -->
+      <g id="data-panel" transform="translate(700, 160)">
+        <!-- Panel background -->
+        <rect x="0" y="0" width="700" height="400" rx="10" ry="10" fill="#242B42" opacity="0.7" filter="url(#glass-effect)" />
+        
+        <!-- Market data -->
+        <text x="40" y="50" font-family="Inter, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">即時市場數據</text>
+        
+        <!-- BTC data -->
+        <text x="40" y="100" font-family="Roboto Mono, monospace" font-size="16" fill="#ffffff">BTC</text>
+        <text x="100" y="100" font-family="Roboto Mono, monospace" font-size="16" font-weight="bold" fill="#ffffff">$42,568.92</text>
+        <rect x="240" y="90" width="30" height="16" rx="3" ry="3" fill="#28A745" />
+        <text x="255" y="102" font-family="Roboto Mono, monospace" font-size="12" fill="#ffffff" text-anchor="middle">+2.3%</text>
+        
+        <!-- Chart for BTC -->
+        <polyline points="280,100 310,90 340,95 370,80 400,85 430,70 460,75 490,65 520,60 550,65 580,55" fill="none" stroke="#28A745" stroke-width="2" />
+        
+        <!-- ETH data -->
+        <text x="40" y="150" font-family="Roboto Mono, monospace" font-size="16" fill="#ffffff">ETH</text>
+        <text x="100" y="150" font-family="Roboto Mono, monospace" font-size="16" font-weight="bold" fill="#ffffff">$2,483.61</text>
+        <rect x="240" y="140" width="30" height="16" rx="3" ry="3" fill="#DC3545" />
+        <text x="255" y="152" font-family="Roboto Mono, monospace" font-size="12" fill="#ffffff" text-anchor="middle">-0.8%</text>
+        
+        <!-- Chart for ETH -->
+        <polyline points="280,145 310,150 340,160 370,155 400,165 430,160 460,170 490,160 520,170 550,165 580,175" fill="none" stroke="#DC3545" stroke-width="2" />
+        
+        <!-- BNB data -->
+        <text x="40" y="200" font-family="Roboto Mono, monospace" font-size="16" fill="#ffffff">BNB</text>
+        <text x="100" y="200" font-family="Roboto Mono, monospace" font-size="16" font-weight="bold" fill="#ffffff">$372.58</text>
+        <rect x="240" y="190" width="30" height="16" rx="3" ry="3" fill="#28A745" />
+        <text x="255" y="202" font-family="Roboto Mono, monospace" font-size="12" fill="#ffffff" text-anchor="middle">+1.5%</text>
+        
+        <!-- Chart for BNB -->
+        <polyline points="280,200 310,195 340,190 370,195 400,185 430,180 460,175 490,180 520,170 550,165 580,160" fill="none" stroke="#28A745" stroke-width="2" />
+        
+        <!-- Main Chart -->
+        <rect x="40" y="230" width="620" height="150" rx="5" ry="5" fill="#1A1F36" opacity="0.5" />
+        
+        <!-- Chart data visualization -->
+        <polyline points="40,350 100,330 160,340 220,310 280,320 340,300 400,280 460,300 520,270 580,260 640,250 660,230" fill="url(#chart-gradient)" fill-opacity="0.2" stroke="#28A745" stroke-width="2" />
+        
+        <!-- X-axis ticks -->
+        <line x1="40" y1="350" x2="660" y2="350" stroke="#6C757D" stroke-width="1" />
+        <text x="40" y="370" font-family="Roboto Mono, monospace" font-size="10" fill="#6C757D">00:00</text>
+        <text x="160" y="370" font-family="Roboto Mono, monospace" font-size="10" fill="#6C757D">06:00</text>
+        <text x="280" y="370" font-family="Roboto Mono, monospace" font-size="10" fill="#6C757D">12:00</text>
+        <text x="400" y="370" font-family="Roboto Mono, monospace" font-size="10" fill="#6C757D">18:00</text>
+        <text x="520" y="370" font-family="Roboto Mono, monospace" font-size="10" fill="#6C757D">23:00</text>
+      </g>
+    </g>
+    
+    <!-- Statistics Section -->
+      <g id="statistics-section" transform="translate(0, 700)">
+        <text x="800" y="60" font-family="Clash Display, sans-serif" font-size="36" font-weight="bold" fill="#ffffff" text-anchor="middle">市場表現</text>
+      
+        <!-- Stat Cards Container -->
+          <g id="stat-cards" transform="translate(230, 100)">
+        <!-- Stat Card 1 - Trading Volume -->
+        <g id="stat-card-1">
+          <rect x="0" y="0" width="380" height="220" rx="10" ry="10" fill="#242B42" opacity="0.8" filter="url(#glass-effect)" />
+          
+          <text x="30" y="40" font-family="Inter, sans-serif" font-size="18" fill="#A0AEC0">交易總額</text>
+          <text x="30" y="80" font-family="Clash Display, sans-serif" font-size="36" font-weight="bold" fill="#ffffff">$2.5B+</text>
+          
+          <!-- Mini chart -->
+          <polyline points="30,150 80,140 130,145 180,130 230,125 280,115 330,110" fill="none" stroke="#007BFF" stroke-width="2" />
+          <rect x="30" y="110" width="300" height="50" fill="url(#chart-gradient)" opacity="0.2" />
+          
+          <!-- Growth label -->
+          <rect x="30" y="180" width="120" height="24" rx="12" ry="12" fill="#28A745" opacity="0.2" />
+          <text x="90" y="196" font-family="Inter, sans-serif" font-size="12" fill="#28A745" text-anchor="middle">本週增長12%</text>
+        </g>
+        
+        <!-- Stat Card 2 - Active Users -->
+        <g id="stat-card-2" transform="translate(400, 0)">
+          <rect x="0" y="0" width="380" height="220" rx="10" ry="10" fill="#242B42" opacity="0.8" filter="url(#glass-effect)" />
+          
+          <text x="30" y="40" font-family="Inter, sans-serif" font-size="18" fill="#A0AEC0">活躍用戶</text>
+          <text x="30" y="80" font-family="Clash Display, sans-serif" font-size="36" font-weight="bold" fill="#ffffff">50,000+</text>
+          
+          <!-- User growth visualization - simplified map -->
+          <rect x="30" y="110" width="300" height="70" rx="5" ry="5" fill="#1A1F36" opacity="0.5" />
+          <circle cx="100" cy="140" r="10" fill="#007BFF" opacity="0.6" />
+          <circle cx="180" cy="150" r="15" fill="#007BFF" opacity="0.6" />
+          <circle cx="250" cy="130" r="12" fill="#007BFF" opacity="0.6" />
+          
+          <!-- Growth label -->
+          <rect x="30" y="180" width="120" height="24" rx="12" ry="12" fill="#28A745" opacity="0.2" />
+          <text x="90" y="196" font-family="Inter, sans-serif" font-size="12" fill="#28A745" text-anchor="middle">較去年增長85%</text>
+        </g>
+        
+        <!-- Stat Card 3 - Support -->
+        <g id="stat-card-3" transform="translate(800, 0)">
+          <rect x="0" y="0" width="380" height="220" rx="10" ry="10" fill="#242B42" opacity="0.8" filter="url(#glass-effect)" />
+          
+          <text x="30" y="40" font-family="Inter, sans-serif" font-size="18" fill="#A0AEC0">全天候支援</text>
+          <text x="30" y="80" font-family="Clash Display, sans-serif" font-size="36" font-weight="bold" fill="#ffffff">24/7</text>
+          
+          <!-- Support visualization - circle progress -->
+          <circle cx="180" cy="140" r="50" fill="none" stroke="#6C757D" stroke-width="8" />
+          <circle cx="180" cy="140" r="50" fill="none" stroke="#007BFF" stroke-width="8" stroke-dasharray="282.6 314" /> <!-- ~90% of circle -->
+          
+          <text x="180" y="145" font-family="Roboto Mono, monospace" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">2分鐘</text>
+          <text x="180" y="165" font-family="Inter, sans-serif" font-size="12" fill="#A0AEC0" text-anchor="middle">平均響應時間</text>
+          
+          <!-- Rating -->
+          <text x="30" y="180" font-family="Inter, sans-serif" font-size="14" fill="#ffffff">滿意度評分:</text>
+          <text x="140" y="180" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#FFD700">4.9/5</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Investment Plans Section -->
+    <g id="investment-plans" transform="translate(0, 1050)">
+      <text x="800" y="60" font-family="Clash Display, sans-serif" font-size="36" font-weight="bold" fill="#ffffff" text-anchor="middle">投資方案</text>
+      
+      <!-- Plan Cards Container -->
+      <g id="plan-cards" transform="translate(335, 100)">
+        <!-- Basic Plan Card -->
+        <g id="basic-plan">
+          <rect x="0" y="0" width="300" height="450" rx="10" ry="10" fill="#ffffff" />
+          <rect x="0" y="0" width="300" height="120" rx="10" ry="0" fill="#F8F9FA" />
+          
+          <text x="150" y="40" font-family="Clash Display, sans-serif" font-size="24" font-weight="bold" fill="#212529" text-anchor="middle">基礎方案</text>
+          <text x="150" y="80" font-family="Clash Display, sans-serif" font-size="36" font-weight="bold" fill="#007BFF" text-anchor="middle">8%</text>
+          <text x="150" y="105" font-family="Inter, sans-serif" font-size="14" fill="#6C757D" text-anchor="middle">月收益</text>
+          
+          <line x1="30" y1="150" x2="270" y2="150" stroke="#DEE2E6" stroke-width="1" />
+          
+          <!-- Features list -->
+          <text x="40" y="180" font-family="Inter, sans-serif" font-size="16" fill="#212529">最低投資額: $1,000</text>
+          <text x="40" y="220" font-family="Inter, sans-serif" font-size="16" fill="#212529">每週收益分配</text>
+          <text x="40" y="260" font-family="Inter, sans-serif" font-size="16" fill="#212529">基礎市場分析</text>
+          <text x="40" y="300" font-family="Inter, sans-serif" font-size="16" fill="#212529">標準交易工具</text>
+          <text x="40" y="340" font-family="Inter, sans-serif" font-size="16" fill="#212529">郵件支援服務</text>
+          
+          <!-- CTA Button -->
+          <rect x="50" y="380" width="200" height="48" rx="8" ry="8" fill="#F8F9FA" stroke="#007BFF" stroke-width="2" />
+          <text x="150" y="410" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#007BFF" text-anchor="middle">開始投資</text>
+        </g>
+        
+        <!-- Advanced Plan Card -->
+        <g id="advanced-plan" transform="translate(340, -20)">
+          <rect x="0" y="0" width="330" height="490" rx="10" ry="10" fill="#ffffff" filter="drop-shadow(0px 10px 15px rgba(0, 123, 255, 0.3))" />
+          <rect x="0" y="0" width="330" height="130" rx="10" ry="0" fill="#EBF5FF" />
+          
+          <!-- Popular tag -->
+          <rect x="100" y="-15" width="130" height="30" rx="15" ry="15" fill="#007BFF" />
+          <text x="165" y="5" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">最受歡迎</text>
+          
+          <text x="165" y="50" font-family="Clash Display, sans-serif" font-size="24" font-weight="bold" fill="#212529" text-anchor="middle">進階方案</text>
+          <text x="165" y="90" font-family="Clash Display, sans-serif" font-size="36" font-weight="bold" fill="#007BFF" text-anchor="middle">12%</text>
+          <text x="165" y="115" font-family="Inter, sans-serif" font-size="14" fill="#6C757D" text-anchor="middle">月收益</text>
+          
+          <line x1="30" y1="160" x2="300" y2="160" stroke="#DEE2E6" stroke-width="1" />
+          
+          <!-- Features list -->
+          <text x="40" y="190" font-family="Inter, sans-serif" font-size="16" fill="#212529">最低投資額: $5,000</text>
+          <text x="40" y="230" font-family="Inter, sans-serif" font-size="16" fill="#212529">每日收益分配</text>
+          <text x="40" y="270" font-family="Inter, sans-serif" font-size="16" fill="#212529">深度市場分析</text>
+          <text x="40" y="310" font-family="Inter, sans-serif" font-size="16" fill="#212529">高級交易工具</text>
+          <text x="40" y="350" font-family="Inter, sans-serif" font-size="16" fill="#212529">優先支援服務</text>
+          <text x="40" y="390" font-family="Inter, sans-serif" font-size="16" fill="#212529">風險管理工具</text>
+          
+          <!-- CTA Button -->
+          <rect x="50" y="420" width="230" height="48" rx="8" ry="8" fill="url(#button-gradient)" />
+          <text x="165" y="450" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">開始投資</text>
+        </g>
+        
+        <!-- Premium Plan Card -->
+        <g id="premium-plan" transform="translate(710, 0)">
+          <rect x="0" y="0" width="300" height="450" rx="10" ry="10" fill="#ffffff" />
+          <rect x="0" y="0" width="300" height="120" rx="10" ry="0" fill="#FFF8E6" />
+          
+          <text x="150" y="40" font-family="Clash Display, sans-serif" font-size="24" font-weight="bold" fill="#212529" text-anchor="middle">尊榮方案</text>
+          <text x="150" y="80" font-family="Clash Display, sans-serif" font-size="36" font-weight="bold" fill="url(#gold-gradient)" text-anchor="middle">20%</text>
+          <text x="150" y="105" font-family="Inter, sans-serif" font-size="14" fill="#6C757D" text-anchor="middle">月收益</text>
+          
+          <line x1="30" y1="150" x2="270" y2="150" stroke="#DEE2E6" stroke-width="1" />
+          
+          <!-- Features list -->
+          <text x="40" y="180" font-family="Inter, sans-serif" font-size="16" fill="#212529">最低投資額: $10,000</text>
+          <text x="40" y="210" font-family="Inter, sans-serif" font-size="16" fill="#212529">即時收益分配</text>
+          <text x="40" y="240" font-family="Inter, sans-serif" font-size="16" fill="#212529">AI策略分析</text>
+          <text x="40" y="270" font-family="Inter, sans-serif" font-size="16" fill="#212529">專屬投資顧問</text>
+          <text x="40" y="300" font-family="Inter, sans-serif" font-size="16" fill="#212529">24/7專線支援</text>
+          <text x="40" y="330" font-family="Inter, sans-serif" font-size="16" fill="#212529">高級風險管理</text>
+          <text x="40" y="360" font-family="Inter, sans-serif" font-size="16" fill="#212529">獨家投資機會</text>
+          
+          <!-- CTA Button -->
+          <rect x="50" y="380" width="200" height="48" rx="8" ry="8" fill="#FFF8E6" stroke="url(#gold-gradient)" stroke-width="2" />
+          <text x="150" y="410" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#FFA500" text-anchor="middle">開始投資</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Trust Building Section -->
+    <g id="trust-section" transform="translate(0, 1650)">
+      <text x="800" y="60" font-family="Clash Display, sans-serif" font-size="36" font-weight="bold" fill="#ffffff" text-anchor="middle">安全可靠</text>
+      
+      <!-- Security Certifications -->
+      <g id="certifications" transform="translate(100, 120)">
+        <rect x="0" y="0" width="1400" height="120" rx="10" ry="10" fill="#242B42" opacity="0.6" />
+        
+        <!-- Security Badges -->
+        <g id="badge-1" transform="translate(175, 30)">
+          <circle cx="0" cy="0" r="30" fill="#28A745" opacity="0.2" />
+          <text x="0" y="0" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#28A745" text-anchor="middle" dominant-baseline="middle">✓</text>
+          <text x="0" y="60" font-family="Inter, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">SSL安全連接</text>
+        </g>
+        
+        <g id="badge-2" transform="translate(425, 30)">
+          <circle cx="0" cy="0" r="30" fill="#007BFF" opacity="0.2" />
+          <text x="0" y="0" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#007BFF" text-anchor="middle" dominant-baseline="middle">🛡️</text>
+          <text x="0" y="60" font-family="Inter, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">金融監管認證</text>
+        </g>
+        
+        <g id="badge-3" transform="translate(675, 30)">
+          <circle cx="0" cy="0" r="30" fill="#FFC107" opacity="0.2" />
+          <text x="0" y="0" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#FFC107" text-anchor="middle" dominant-baseline="middle">🔒</text>
+          <text x="0" y="60" font-family="Inter, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">256位元加密</text>
+        </g>
+        
+        <g id="badge-4" transform="translate(925, 30)">
+          <circle cx="0" cy="0" r="30" fill="#17A2B8" opacity="0.2" />
+          <text x="0" y="0" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#17A2B8" text-anchor="middle" dominant-baseline="middle">🏦</text>
+          <text x="0" y="60" font-family="Inter, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">銀行級安全</text>
+        </g>
+        
+        <g id="badge-5" transform="translate(1175, 30)">
+          <circle cx="0" cy="0" r="30" fill="#6C757D" opacity="0.2" />
+          <text x="0" y="0" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#6C757D" text-anchor="middle" dominant-baseline="middle">📑</text>
+          <text x="0" y="60" font-family="Inter, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">ISO 27001認證</text>
+        </g>
+      </g>
+      
+      <!-- User Testimonials -->
+      <g id="testimonials" transform="translate(0, 280)">
+        <text x="800" y="0" font-family="Clash Display, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">用戶見證</text>
+        
+        <!-- Testimonial Card 1 -->
+        <g id="testimonial-1" transform="translate(280, 50)">
+          <rect x="0" y="0" width="320" height="250" rx="10" ry="10" fill="#242B42" opacity="0.8" filter="url(#glass-effect)" />
+          
+          <circle cx="50" cy="50" r="30" fill="#A0AEC0" />
+          <text x="120" y="40" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">張先生，科技公司經理</text>
+          <text x="120" y="60" font-family="Inter, sans-serif" font-size="14" fill="#A0AEC0">會員9個月</text>
+          
+          <!-- Star Rating -->
+          <g transform="translate(120, 80)">
+            <circle cx="0" cy="0" r="8" fill="#FFD700" />
+            <circle cx="20" cy="0" r="8" fill="#FFD700" />
+            <circle cx="40" cy="0" r="8" fill="#FFD700" />
+            <circle cx="60" cy="0" r="8" fill="#FFD700" />
+            <circle cx="80" cy="0" r="8" fill="#FFD700" />
+          </g>
+          
+          <!-- Testimonial text -->
+          <text x="30" y="120" font-family="Inter, sans-serif" font-size="14" fill="#ffffff">加入CryptoTech Pro後，我的投資組合表現</text>
+          <text x="30" y="140" font-family="Inter, sans-serif" font-size="14" fill="#ffffff">遠超預期，專業的分析和即時支援讓我充滿信心。</text>
+          
+          <!-- Return rate -->
+          <text x="30" y="180" font-family="Roboto Mono, monospace" font-size="18" font-weight="bold" fill="#28A745">年投資報酬率：23.5%</text>
+        </g>
+        
+        <!-- Testimonial Card 2 -->
+        <g id="testimonial-2" transform="translate(640, 50)">
+          <rect x="0" y="0" width="320" height="250" rx="10" ry="10" fill="#242B42" opacity="0.8" filter="url(#glass-effect)" />
+          
+          <circle cx="50" cy="50" r="30" fill="#A0AEC0" />
+          <text x="120" y="40" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">林女士，投資顧問</text>
+          <text x="120" y="60" font-family="Inter, sans-serif" font-size="14" fill="#A0AEC0">會員12個月</text>
+          
+          <!-- Star Rating -->
+          <g transform="translate(120, 80)">
+            <circle cx="0" cy="0" r="8" fill="#FFD700" />
+            <circle cx="20" cy="0" r="8" fill="#FFD700" />
+            <circle cx="40" cy="0" r="8" fill="#FFD700" />
+            <circle cx="60" cy="0" r="8" fill="#FFD700" />
+            <circle cx="80" cy="0" r="8" fill="#FFD700" />
+          </g>
+          
+          <!-- Testimonial text -->
+          <text x="30" y="120" font-family="Inter, sans-serif" font-size="14" fill="#ffffff">作為專業投資顧問，我對CryptoTech Pro的</text>
+          <text x="30" y="140" font-family="Inter, sans-serif" font-size="14" fill="#ffffff">風險管理工具和深度分析印象深刻，絕對是市場上</text>
+          <text x="30" y="160" font-family="Inter, sans-serif" font-size="14" fill="#ffffff">最專業的加密貨幣平台。</text>
+          
+          <!-- Return rate -->
+          <text x="30" y="200" font-family="Roboto Mono, monospace" font-size="18" font-weight="bold" fill="#28A745">客戶平均收益率：18.7%</text>
+        </g>
+        
+        <!-- Testimonial Card 3 -->
+        <g id="testimonial-3" transform="translate(1000, 50)">
+          <rect x="0" y="0" width="320" height="250" rx="10" ry="10" fill="#242B42" opacity="0.8" filter="url(#glass-effect)" />
+          
+          <circle cx="50" cy="50" r="30" fill="#A0AEC0" />
+          <text x="120" y="40" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">王先生，退休教師</text>
+          <text x="120" y="60" font-family="Inter, sans-serif" font-size="14" fill="#A0AEC0">會員6個月</text>
+          
+          <!-- Star Rating -->
+          <g transform="translate(120, 80)">
+            <circle cx="0" cy="0" r="8" fill="#FFD700" />
+            <circle cx="20" cy="0" r="8" fill="#FFD700" />
+            <circle cx="40" cy="0" r="8" fill="#FFD700" />
+            <circle cx="60" cy="0" r="8" fill="#FFD700" />
+            <circle cx="80" cy="0" r="8" fill="#DDD" />
+          </g>
+          
+          <!-- Testimonial text -->
+          <text x="30" y="120" font-family="Inter, sans-serif" font-size="14" fill="#ffffff">從不懂加密貨幣到現在能自信投資，全靠</text>
+          <text x="30" y="140" font-family="Inter, sans-serif" font-size="14" fill="#ffffff">CryptoTech Pro簡單易懂的界面和專業的</text>
+          <text x="30" y="160" font-family="Inter, sans-serif" font-size="14" fill="#ffffff">客戶支援，讓我的退休金有了更好的增值。</text>
+          
+          <!-- Return rate -->
+          <text x="30" y="200" font-family="Roboto Mono, monospace" font-size="18" font-weight="bold" fill="#28A745">年投資報酬率：15.2%</text>
+        </g>
+        
+        <!-- Pagination dots -->
+        <g transform="translate(800, 320)">
+          <circle cx="0" cy="0" r="6" fill="#007BFF" />
+          <circle cx="20" cy="0" r="4" fill="#6C757D" />
+          <circle cx="40" cy="0" r="4" fill="#6C757D" />
+        </g>
+      </g>
+    </g>
+    
+    <!-- Registration Page -->
+    <g id="registration-page" transform="translate(0, 2600)">
+      <text x="800" y="60" font-family="Clash Display, sans-serif" font-size="36" font-weight="bold" fill="#ffffff" text-anchor="middle">開始您的投資旅程</text>
+      
+      <!-- Registration Form -->
+      <g id="registration-form" transform="translate(300, 120)">
+        <rect x="0" y="0" width="1000" height="500" rx="10" ry="10" fill="#242B42" opacity="0.8" filter="url(#glass-effect)" />
+        
+        <!-- Progress bar -->
+        <rect x="100" y="50" width="800" height="8" rx="4" ry="4" fill="#3B4357" />
+        <rect x="100" y="50" width="266" height="8" rx="4" ry="4" fill="#007BFF" />
+        
+        <!-- Step indicators -->
+        <text x="100" y="80" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#007BFF">步驟 1：基本資訊</text>
+        <text x="400" y="80" font-family="Inter, sans-serif" font-size="14" fill="#A0AEC0">步驟 2：個人偏好</text>
+        <text x="700" y="80" font-family="Inter, sans-serif" font-size="14" fill="#A0AEC0">步驟 3：確認</text>
+        
+        <!-- Form fields -->
+        <g id="form-fields" transform="translate(100, 120)">
+          <!-- Email field -->
+          <text x="0" y="0" font-family="Inter, sans-serif" font-size="16" fill="#ffffff">電子郵件</text>
+          <rect x="0" y="10" width="600" height="48" rx="8" ry="8" fill="#1A1F36" stroke="#3B4357" stroke-width="1" />
+          <text x="20" y="40" font-family="Inter, sans-serif" font-size="16" fill="#6C757D">your.email@example.com</text>
+          
+          <!-- Password field -->
+          <text x="0" y="90" font-family="Inter, sans-serif" font-size="16" fill="#ffffff">密碼</text>
+          <rect x="0" y="100" width="600" height="48" rx="8" ry="8" fill="#1A1F36" stroke="#3B4357" stroke-width="1" />
+          <text x="20" y="130" font-family="Inter, sans-serif" font-size="16" fill="#6C757D">••••••••</text>
+          
+          <!-- Password strength -->
+          <rect x="0" y="160" width="600" height="5" rx="2.5" ry="2.5" fill="#3B4357" />
+          <rect x="0" y="160" width="300" height="5" rx="2.5" ry="2.5" fill="#FFC107" />
+          <text x="0" y="180" font-family="Inter, sans-serif" font-size="12" fill="#FFC107">中等強度</text>
+          
+          <!-- Confirm password field -->
+          <text x="0" y="210" font-family="Inter, sans-serif" font-size="16" fill="#ffffff">確認密碼</text>
+          <rect x="0" y="220" width="600" height="48" rx="8" ry="8" fill="#1A1F36" stroke="#3B4357" stroke-width="1" />
+          <text x="20" y="250" font-family="Inter, sans-serif" font-size="16" fill="#6C757D">••••••••</text>
+          
+          <!-- Security notice -->
+          <rect x="0" y="290" width="600" height="70" rx="8" ry="8" fill="#1A2A4A" />
+          <text x="50" y="320" font-family="Inter, sans-serif" font-size="14" fill="#A0AEC0">您的資料受256位元加密保護</text>
+          <text x="50" y="345" font-family="Inter, sans-serif" font-size="14" fill="#A0AEC0">我們絕不分享您的個人資料</text>
+          <text x="20" y="332" font-family="Inter, sans-serif" font-size="16" fill="#007BFF">🔒</text>
+        </g>
+        
+        <!-- Navigation buttons -->
+        <g id="nav-buttons" transform="translate(600, 420)">
+          <rect x="0" y="0" width="150" height="48" rx="8" ry="8" fill="url(#button-gradient)" />
+          <text x="75" y="30" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">下一步</text>
+        </g>
+      </g>
+    </g>
+    
+
+  </g>
+</svg>
