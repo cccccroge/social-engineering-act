@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1600" height="3400" viewBox="0 0 1600 3400" xmlns="http://www.w3.org/2000/svg">
+  <title>CryptoTech Pro V2 - Wireframe</title>
+  <!-- Styles -->
+  <style>
+    .bg-rect { fill: #f0f0f0; }
+    .section-title { font-family: "PingFang TC", Arial; font-weight: bold; font-size: 32px; text-anchor: middle; }
+    .text { font-family: "PingFang TC", Arial; font-size: 14px; }
+    .container { fill: none; stroke: #888; stroke-width: 1; }
+    .highlight-container { fill: none; stroke: #444; stroke-width: 2; }
+    .nav-item { font-family: "PingFang TC", Arial; font-size: 14px; }
+    .btn { fill: #ccc; stroke: #888; stroke-width: 1; rx: 8px; }
+    .btn-primary { fill: #aaccff; stroke: #6688cc; stroke-width: 1; rx: 8px; }
+    .btn-text { font-family: "PingFang TC", Arial; font-size: 14px; font-weight: bold; text-anchor: middle; dominant-baseline: middle; }
+    .card { fill: white; stroke: #888; stroke-width: 1; }
+    .card-highlight { fill: white; stroke: #444; stroke-width: 2; }
+    .card-title { font-family: "PingFang TC", Arial; font-weight: bold; font-size: 16px; }
+    .card-text { font-family: "PingFang TC", Arial; font-size: 12px; }
+    .image-placeholder { fill: #ddd; stroke: #888; stroke-width: 1; }
+    .icon-placeholder { fill: #bbb; }
+    .form-field { fill: white; stroke: #888; stroke-width: 1; }
+    .form-label { font-family: "PingFang TC", Arial; font-size: 12px; }
+    .hexagon { fill: #ddd; stroke: #888; stroke-width: 1; }
+    .hexagon-primary { fill: #aaccff; stroke: #6688cc; stroke-width: 1; }
+    .hexagon-gold { fill: #ffee99; stroke: #d4b106; stroke-width: 1; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1600" height="3400" fill="white"/>
+
+  <!-- Header Section -->
+  <g transform="translate(0,0)">
+    <rect width="1600" height="80" class="container" />
+    <!-- Logo with hexagon -->
+    <g transform="translate(100, 20)">
+      <path d="M30,10 L50,0 L70,10 L70,30 L50,40 L30,30 Z" class="hexagon-primary" />
+      <text x="120" y="25" class="card-title" text-anchor="middle" font-weight="bold">CryptoTech Pro</text>
+    </g>
+    
+    <!-- Navigation -->
+    <g transform="translate(800,40)">
+      <text x="400" y="5" class="nav-item">首頁</text>
+      <text x="500" y="5" class="nav-item">方案</text>
+      <text x="600" y="5" class="nav-item">立即註冊</text>
+    </g>
+    
+    <!-- CTA Buttons -->
+  </g>
+
+  <!-- Hero Section -->
+  <g transform="translate(0,80)">
+    <!-- Background with hexagon grid pattern -->
+    <rect width="1600" height="600" fill="#1A1F36" />
+    <g transform="translate(0,0)" opacity="0.08">
+      <!-- Hexagon grid pattern -->
+      <defs>
+        <pattern id="hexagonPattern" width="100" height="100" patternUnits="userSpaceOnUse">
+          <path d="M50,25 L75,40 L75,70 L50,85 L25,70 L25,40 Z" fill="none" stroke="white" />
+        </pattern>
+      </defs>
+      <rect width="1600" height="600" fill="url(#hexagonPattern)" />
+    </g>
+    
+    <!-- Left Content -->
+    <g transform="translate(200,150)">
+      <text font-family="PingFang TC, Arial" font-weight="bold" font-size="48" y="0" fill="white">安全加密貨幣</text>
+      <text font-family="PingFang TC, Arial" font-weight="bold" font-size="48" y="60" fill="white">投資平台</text>
+      <text class="text" y="120" width="500" fill="#DEE2E6">採用AI動力策略的先進加密貨幣投資解決方案。使用我們的安全平台開始增長您的數位資產。</text>
+      
+      <!-- CTA Button -->
+      <rect x="0" y="160" width="200" height="50" rx="8" class="btn-primary" />
+      <text x="100" y="185" class="btn-text">開始投資</text>
+      
+      <!-- Trust indicators with hexagons -->
+      <g transform="translate(0,240)">
+        <path d="M15,0 L30,10 L30,25 L15,35 L0,25 L0,10 Z" transform="translate(0,0)" class="hexagon-primary" />
+        <text x="40" y="20" class="text" fill="white">SSL 安全保障</text>
+        
+        <path d="M15,0 L30,10 L30,25 L15,35 L0,25 L0,10 Z" transform="translate(0,45)" class="hexagon-primary" />
+        <text x="40" y="60" class="text" fill="white">256位元加密</text>
+        
+        <path d="M15,0 L30,10 L30,25 L15,35 L0,25 L0,10 Z" transform="translate(0,90)" class="hexagon-primary" />
+        <text x="40" y="100" class="text" fill="white">受監管投資</text>
+      </g>
+    </g>
+    
+    <!-- Right Dashboard Preview -->
+    <g transform="translate(800,100)">
+      <rect width="600" height="400" rx="10" fill="rgba(255,255,255,0.1)" stroke="#6688cc" stroke-width="2" />
+      <!-- Glass effect -->
+      <rect width="600" height="400" rx="10" fill="rgba(255,255,255,0.05)" />
+      
+      <!-- Cryptocurrency symbols floating -->
+      <g transform="translate(300,80)">
+        <path d="M20,0 L40,10 L40,30 L20,40 L0,30 L0,10 Z" class="hexagon-gold" />
+        <text x="20" y="25" font-family="Roboto Mono" font-weight="bold" text-anchor="middle" fill="white">฿</text>
+      </g>
+      
+      <g transform="translate(450,150)">
+        <path d="M15,0 L30,8 L30,24 L15,32 L0,24 L0,8 Z" class="hexagon-primary" />
+        <text x="15" y="20" font-family="Roboto Mono" font-weight="bold" text-anchor="middle" fill="white">Ξ</text>
+      </g>
+      
+      <!-- Sample charts and data -->
+      <rect x="50" y="50" width="500" height="120" rx="8" fill="rgba(255,255,255,0.05)" stroke="#6688cc" />
+      <text x="70" y="75" fill="white" font-family="Roboto Mono" font-size="12">BTC/USD</text>
+      <polyline points="75,150 125,120 175,130 225,90 275,100 325,80 375,70 425,85 475,60" 
+                stroke="#28A745" stroke-width="2" fill="none" />
+                
+      <rect x="50" y="200" width="240" height="150" rx="8" fill="rgba(255,255,255,0.05)" stroke="#6688cc" />
+      <text x="70" y="225" fill="white" font-family="Roboto Mono" font-size="12">資產分配</text>
+      <circle cx="170" cy="275" r="70" stroke="#6688cc" stroke-width="2" fill="none" />
+      <path d="M170,275 L170,205 A70,70 0 0,1 228,310 z" fill="#007BFF" opacity="0.7" stroke="#6688cc" />
+      <path d="M170,275 L228,310 A70,70 0 0,1 170,345 z" fill="#FFD700" opacity="0.7" stroke="#6688cc" />
+      
+      <rect x="310" y="200" width="240" height="150" rx="8" fill="rgba(255,255,255,0.05)" stroke="#6688cc" />
+      <text x="330" y="225" fill="white" font-family="Roboto Mono" font-size="12">交易量</text>
+      <rect x="330" y="230" width="30" height="100" fill="#007BFF" opacity="0.7" />
+      <rect x="370" y="250" width="30" height="80" fill="#007BFF" opacity="0.7" />
+      <rect x="410" y="210" width="30" height="120" fill="#28A745" opacity="0.7" />
+      <rect x="450" y="270" width="30" height="60" fill="#DC3545" opacity="0.7" />
+      <rect x="490" y="240" width="30" height="90" fill="#28A745" opacity="0.7" />
+    </g>
+  </g>
+
+  <!-- Key Metrics Section -->
+  <g transform="translate(0,680)">
+    <rect width="1600" height="300" fill="#F8F9FA" />
+    <text x="800" y="50" class="section-title">平台關鍵指標</text>
+    <!-- Decorative hexagons -->
+    <path d="M20,0 L40,10 L40,30 L20,40 L0,30 L0,10 Z" transform="translate(700,50)" fill="#007BFF" opacity="0.2" />
+    <path d="M10,0 L20,5 L20,15 L10,20 L0,15 L0,5 Z" transform="translate(880,55)" fill="#FFD700" opacity="0.2" />
+    
+    <!-- Metric Cards -->
+    <g transform="translate(230,100)">
+      <rect width="380" height="160" rx="10" class="card" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))" />
+      <text x="190" y="40" class="card-title" text-anchor="middle">$2.5B+ 交易量</text>
+      <line x1="50" y1="60" x2="330" y2="60" stroke="#007BFF" stroke-width="1" />
+      <polyline points="50,120 90,100 130,110 170,90 210,110 250,80 290,90 330,70" 
+                stroke="#007BFF" stroke-width="2" fill="none" />
+      <!-- Area under curve with gradient -->
+      <linearGradient id="areaGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#007BFF" stop-opacity="0.2" />
+        <stop offset="100%" stop-color="#007BFF" stop-opacity="0" />
+      </linearGradient>
+      <path d="M50,120 90,100 130,110 170,90 210,110 250,80 290,90 330,70 330,140 50,140 Z" fill="url(#areaGradient1)" />
+      <text x="190" y="140" class="card-text" text-anchor="middle">每週增長12%</text>
+      
+      <!-- Small hexagon indicator -->
+      <path d="M10,0 L15,5 L15,10 L10,15 L5,10 L5,5 Z" transform="translate(330,140)" fill="#28A745" />
+    </g>
+    
+    <g transform="translate(610,100)">
+      <rect width="380" height="160" rx="10" class="card" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))" />
+      <text x="190" y="40" class="card-title" text-anchor="middle">50,000+ 活躍用戶</text>
+      <line x1="50" y1="60" x2="330" y2="60" stroke="#007BFF" stroke-width="1" />
+      <polyline points="50,120 90,115 130,105 170,100 210,85 250,75 290,65 330,50" 
+                stroke="#007BFF" stroke-width="2" fill="none" />
+      
+      <!-- Area under curve with gradient -->
+      <linearGradient id="areaGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#007BFF" stop-opacity="0.2" />
+        <stop offset="100%" stop-color="#007BFF" stop-opacity="0" />
+      </linearGradient>
+      <path d="M50,120 90,115 130,105 170,100 210,85 250,75 290,65 330,50 330,140 50,140 Z" fill="url(#areaGradient2)" />
+      <text x="190" y="140" class="card-text" text-anchor="middle">同比增長85%</text>
+      
+      <!-- Small hexagon indicator -->
+      <path d="M10,0 L15,5 L15,10 L10,15 L5,10 L5,5 Z" transform="translate(330,140)" fill="#28A745" />
+    </g>
+    
+    <g transform="translate(990,100)">
+      <rect width="380" height="160" rx="10" class="card" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))" />
+      <text x="190" y="40" class="card-title" text-anchor="middle">24/7 專家支援</text>
+      <line x1="50" y1="60" x2="330" y2="60" stroke="#007BFF" stroke-width="1" />
+      
+      <!-- Circle chart with better colors -->
+      <circle cx="190" cy="100" r="40" stroke="#DEE2E6" stroke-width="2" fill="none" />
+      <path d="M190,100 L190,60 A40,40 0 0,1 225,120 z" fill="#28A745" fill-opacity="0.7" stroke="#28A745" />
+      <text x="190" y="105" font-family="Roboto Mono" font-size="14" text-anchor="middle">4.9/5</text>
+      <text x="190" y="140" class="card-text" text-anchor="middle">4.9/5 客戶滿意度</text>
+      
+      <!-- Small hexagon indicator -->
+      <path d="M10,0 L15,5 L15,10 L10,15 L5,10 L5,5 Z" transform="translate(330,140)" fill="#28A745" />
+    </g>
+  </g>
+
+  <!-- Investment Plans Section -->
+  <g transform="translate(0,980)">
+    <rect width="1600" height="600" fill="white" />
+    <text x="800" y="50" class="section-title">投資方案</text>
+    <!-- Decorative elements -->
+    <path d="M25,0 L50,15 L50,45 L25,60 L0,45 L0,15 Z" transform="translate(700,50)" fill="#007BFF" opacity="0.1" />
+    <path d="M15,0 L30,8 L30,24 L15,32 L0,24 L0,8 Z" transform="translate(890,50)" fill="#FFD700" opacity="0.1" />
+    
+    <!-- Basic Plan -->
+    <g transform="translate(335,100)">
+      <rect width="300" height="450" rx="10" class="card" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))" />
+      <rect width="300" height="10" fill="#DEE2E6" rx="5" />
+      <text x="150" y="40" class="card-title" text-anchor="middle">基礎方案</text>
+      <line x1="50" y1="60" x2="250" y2="60" stroke="#DEE2E6" stroke-width="1" />
+      
+      <text x="150" y="100" font-family="Roboto Mono" font-weight="bold" font-size="32" text-anchor="middle">8%</text>
+      <text x="150" y="130" class="text" text-anchor="middle">每月回報</text>
+      
+      <line x1="50" y1="160" x2="250" y2="160" stroke="#DEE2E6" stroke-width="1" />
+      
+      <!-- Features -->
+      <g transform="translate(60,190)">
+        <circle cx="0" cy="0" r="5" class="icon-placeholder" />
+        <text x="20" y="5" class="card-text">最低投資額: $1,000</text>
+        
+        <circle cx="0" cy="30" r="5" class="icon-placeholder" />
+        <text x="20" y="35" class="card-text">每週收益</text>
+        
+        <circle cx="0" cy="60" r="5" class="icon-placeholder" />
+        <text x="20" y="65" class="card-text">基本市場分析</text>
+        
+        <circle cx="0" cy="90" r="5" class="icon-placeholder" />
+        <text x="20" y="95" class="card-text">標準交易工具</text>
+        
+        <circle cx="0" cy="120" r="5" class="icon-placeholder" />
+        <text x="20" y="125" class="card-text">電子郵件支援</text>
+      </g>
+      
+      <!-- CTA Button -->
+      <rect x="75" y="380" width="150" height="40" rx="8" fill="#FFD700" stroke="#FFA500" stroke-width="1" />
+      <text x="150" y="400" class="btn-text">選擇方案</text>
+    </g>
+    
+    <!-- Advanced Plan -->
+    <g transform="translate(635,100)">
+      <rect width="330" height="450" rx="10" class="card-highlight" filter="drop-shadow(0 8px 15px rgba(0,0,0,0.15))" />
+      <!-- Blue gradient border -->
+      <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#007BFF" />
+        <stop offset="100%" stop-color="#0056b3" />
+      </linearGradient>
+      <rect width="330" height="450" rx="10" fill="none" stroke="url(#borderGradient)" stroke-width="2" />
+      <rect width="330" height="10" fill="#007BFF" rx="5" />
+      <rect x="90" y="-15" width="150" height="30" rx="15" fill="#007BFF" />
+      <text x="165" y="0" class="card-text" text-anchor="middle" dominant-baseline="middle" fill="white">最受歡迎</text>
+      <text x="165" y="40" class="card-title" text-anchor="middle">進階方案</text>
+      <line x1="65" y1="60" x2="265" y2="60" stroke="#007BFF" stroke-width="1" />
+      
+      <text x="165" y="100" font-family="Roboto Mono" font-weight="bold" font-size="32" text-anchor="middle">12%</text>
+      <text x="165" y="130" class="text" text-anchor="middle">每月回報</text>
+      
+      <line x1="65" y1="160" x2="265" y2="160" stroke="#007BFF" stroke-width="1" />
+      
+      <!-- Features -->
+      <g transform="translate(75,190)">
+        <circle cx="0" cy="0" r="5" class="icon-placeholder" />
+        <text x="20" y="5" class="card-text">最低投資額: $5,000</text>
+        
+        <circle cx="0" cy="30" r="5" class="icon-placeholder" />
+        <text x="20" y="35" class="card-text">每日收益</text>
+        
+        <circle cx="0" cy="60" r="5" class="icon-placeholder" />
+        <text x="20" y="65" class="card-text">進階市場分析</text>
+        
+        <circle cx="0" cy="90" r="5" class="icon-placeholder" />
+        <text x="20" y="95" class="card-text">高級交易工具</text>
+        
+        <circle cx="0" cy="120" r="5" class="icon-placeholder" />
+        <text x="20" y="125" class="card-text">優先支援服務</text>
+        
+        <circle cx="0" cy="150" r="5" class="icon-placeholder" />
+        <text x="20" y="155" class="card-text">風險管理工具</text>
+      </g>
+      
+      <!-- CTA Button -->
+      <rect x="90" y="380" width="150" height="40" rx="8" class="btn-primary" />
+      <text x="165" y="400" class="btn-text">選擇方案</text>
+    </g>
+    
+    <!-- Premium Plan -->
+    <g transform="translate(965,100)">
+      <rect width="300" height="450" rx="10" class="card" filter="drop-shadow(0 8px 15px rgba(0,0,0,0.15))" />
+      <!-- Gold texture background -->
+      <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFD700" />
+        <stop offset="100%" stop-color="#FFA500" />
+      </linearGradient>
+      <rect width="300" height="450" rx="10" fill="white" stroke="url(#goldGradient)" stroke-width="2" />
+      <rect width="300" height="10" fill="#FFD700" rx="5" />
+      <text x="150" y="40" class="card-title" text-anchor="middle">尊榮方案</text>
+      <line x1="50" y1="60" x2="250" y2="60" stroke="#FFD700" stroke-width="1" />
+      
+      <text x="150" y="100" font-family="Roboto Mono" font-weight="bold" font-size="32" text-anchor="middle">18%</text>
+      <text x="150" y="130" class="text" text-anchor="middle">每月回報</text>
+      
+      <line x1="50" y1="160" x2="250" y2="160" stroke="#FFD700" stroke-width="1" />
+      
+      <!-- Features -->
+      <g transform="translate(60,190)">
+        <circle cx="0" cy="0" r="5" class="icon-placeholder" />
+        <text x="20" y="5" class="card-text">最低投資額: $10,000</text>
+        
+        <circle cx="0" cy="30" r="5" class="icon-placeholder" />
+        <text x="20" y="35" class="card-text">即時收益</text>
+        
+        <circle cx="0" cy="60" r="5" class="icon-placeholder" />
+        <text x="20" y="65" class="card-text">AI策略分析</text>
+        
+        <circle cx="0" cy="90" r="5" class="icon-placeholder" />
+        <text x="20" y="95" class="card-text">專屬投資顧問</text>
+        
+        <circle cx="0" cy="120" r="5" class="icon-placeholder" />
+        <text x="20" y="125" class="card-text">24/7尊榮支援</text>
+        
+        <circle cx="0" cy="150" r="5" class="icon-placeholder" />
+        <text x="20" y="155" class="card-text">高級風險管理</text>
+        
+        <circle cx="0" cy="180" r="5" class="icon-placeholder" />
+        <text x="20" y="185" class="card-text">獨家投資機會</text>
+      </g>
+      
+      <!-- CTA Button -->
+      <rect x="75" y="380" width="150" height="40" rx="5" class="btn" />
+      <text x="150" y="400" class="btn-text">選擇方案</text>
+    </g>
+  </g>
+
+  <!-- Trust Section -->
+  <g transform="translate(0,1580)">
+    <rect width="1600" height="500" fill="#f8f8f8" />
+    <text x="800" y="50" class="section-title">為何選擇我們</text>
+    <!-- Decorative elements -->
+    <path d="M25,0 L50,15 L50,45 L25,60 L0,45 L0,15 Z" transform="translate(650,50)" fill="#007BFF" opacity="0.1" />
+    <path d="M15,0 L30,8 L30,24 L15,32 L0,24 L0,8 Z" transform="translate(950,50)" fill="#FFD700" opacity="0.1" />
+    
+    <!-- Security Certifications -->
+    <g transform="translate(200,100)">
+      <text x="0" y="0" class="card-title">安全認證</text>
+      <line x1="0" y1="20" x2="300" y2="20" stroke="#007BFF" stroke-width="1" />
+      
+      <g transform="translate(0,50)">
+        <path d="M30,0 L60,15 L60,45 L30,60 L0,45 L0,15 Z" class="hexagon-primary" />
+        <text x="30" y="35" font-family="Arial" font-weight="bold" font-size="10" text-anchor="middle" fill="white">SSL</text>
+        <text x="80" y="35" class="text">SSL安全保障</text>
+      </g>
+      
+      <g transform="translate(0,130)">
+        <path d="M30,0 L60,15 L60,45 L30,60 L0,45 L0,15 Z" class="hexagon-primary" />
+        <text x="30" y="35" font-family="Arial" font-weight="bold" font-size="10" text-anchor="middle" fill="white">ISO</text>
+        <text x="80" y="35" class="text">ISO 27001認證</text>
+      </g>
+      
+      <g transform="translate(0,210)">
+        <path d="M30,0 L60,15 L60,45 L30,60 L0,45 L0,15 Z" class="hexagon-gold" />
+        <text x="30" y="35" font-family="Arial" font-weight="bold" font-size="10" text-anchor="middle" fill="white">認證</text>
+        <text x="80" y="35" class="text">金融監管機構認可</text>
+      </g>
+    </g>
+    
+    <!-- Testimonials -->
+    <g transform="translate(640,100)">
+      <text x="160" y="0" class="card-title" text-anchor="middle">客戶評價</text>
+      <line x1="10" y1="20" x2="310" y2="20" stroke="#888" stroke-width="1" />
+      
+      <g transform="translate(0,50)">
+      <rect width="320" height="180" rx="10" class="card" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))" />
+      <path d="M30,0 L60,15 L60,45 L30,60 L0,45 L0,15 Z" transform="translate(35,25)" fill="#f0f0f0" stroke="#ddd" />
+      <text x="110" y="40" class="card-text" font-weight="bold">張先生</text>
+      <text x="110" y="60" class="card-text">科技公司經理</text>
+      <text x="160" y="100" class="card-text" text-anchor="middle">"加入CryptoTech Pro後，我的</text>
+      <text x="160" y="120" class="card-text" text-anchor="middle">投資組合表現遠超預期，</text>
+      <text x="160" y="140" class="card-text" text-anchor="middle">達到了23.5%的回報率。"</text>
+        <g transform="translate(50,170)">
+          <circle cx="0" cy="0" r="5" fill="#aaccff" />
+          <circle cx="20" cy="0" r="5" fill="#aaccff" />
+          <circle cx="40" cy="0" r="5" fill="#aaccff" />
+          <circle cx="60" cy="0" r="5" fill="#aaccff" />
+          <circle cx="80" cy="0" r="5" fill="#aaccff" />
+        </g>
+        <text x="180" y="170" class="card-text">會員9個月</text>
+      </g>
+      
+      <!-- Testimonial Navigation -->
+      <g transform="translate(160,250)">
+        <circle cx="-40" cy="0" r="15" class="btn" />
+        <text x="-40" y="5" class="btn-text" text-anchor="middle">&lt;</text>
+        <circle cx="40" cy="0" r="15" class="btn" />
+        <text x="40" y="5" class="btn-text" text-anchor="middle">&gt;</text>
+      </g>
+    </g>
+    
+    <!-- Market Analysis -->
+    <g transform="translate(1080,100)">
+      <text x="160" y="0" class="card-title" text-anchor="middle">市場分析</text>
+      <line x1="10" y1="20" x2="310" y2="20" stroke="#888" stroke-width="1" />
+      
+      <g transform="translate(0,50)">
+      <rect width="320" height="180" rx="10" class="card" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))" />
+      <polyline points="20,120 60,100 100,110 140,90 180,100 220,80 260,90 300,70" 
+                stroke="#28A745" stroke-width="2" fill="none" />
+      <line x1="20" y1="140" x2="300" y2="140" stroke="#DEE2E6" stroke-width="1" />
+      <line x1="20" y1="50" x2="20" y2="140" stroke="#DEE2E6" stroke-width="1" />
+      <text x="160" y="40" class="card-text" text-anchor="middle">BTC/USD市場趨勢</text>
+      <text x="80" y="160" class="card-text">目前價格: $42,568</text>
+      <text x="240" y="160" class="card-text" text-anchor="right" fill="#28A745">+5.4%</text>
+    </g>
+      
+      <rect x="85" y="250" width="150" height="30" rx="8" class="btn-primary" />
+      <text x="160" y="265" class="btn-text">查看完整分析</text>
+    </g>
+  </g>
+
+  <!-- Registration Section -->
+  <g transform="translate(0,2080)">
+    <rect width="1600" height="600" fill="white" />
+    <text x="800" y="50" class="section-title">立即開始投資</text>
+    <!-- Decorative hexagons -->
+    <path d="M25,0 L50,15 L50,45 L25,60 L0,45 L0,15 Z" transform="translate(650,50)" fill="#007BFF" opacity="0.1" />
+    <path d="M15,0 L30,8 L30,24 L15,32 L0,24 L0,8 Z" transform="translate(950,50)" fill="#FFD700" opacity="0.1" />
+    
+    <!-- Left content -->
+    <g transform="translate(250,150)">
+      <text font-family="Arial" font-weight="bold" font-size="24" y="0">創建您的帳戶</text>
+      <text class="text" y="40">加入數千名使用我們先進的加密貨幣平台</text>
+      <text class="text" y="65">賺取被動收入的投資者。</text>
+      
+      <!-- Benefits -->
+      <g transform="translate(0,120)">
+        <circle cx="10" cy="0" r="5" class="icon-placeholder" />
+        <text x="30" y="5" class="text">快速三步驟註冊流程</text>
+        
+        <circle cx="10" cy="40" r="5" class="icon-placeholder" />
+        <text x="30" y="45" class="text">安全SSL加密連接</text>
+        
+        <circle cx="10" cy="80" r="5" class="icon-placeholder" />
+        <text x="30" y="85" class="text">最低僅需$1,000即可開始</text>
+        
+        <circle cx="10" cy="120" r="5" class="icon-placeholder" />
+        <text x="30" y="125" class="text">無隱藏費用或佣金</text>
+        
+        <circle cx="10" cy="160" r="5" class="icon-placeholder" />
+        <text x="30" y="165" class="text">24/7客戶支援</text>
+      </g>
+    </g>
+    
+    <!-- Registration Form -->
+    <g transform="translate(850,100)">
+      <rect width="500" height="420" rx="10" class="card" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))" />
+      
+      <!-- Progress Indicators -->
+      <g transform="translate(50,40)">
+        <circle cx="50" cy="0" r="15" fill="#aaccff" stroke="#6688cc" />
+        <text x="50" y="5" class="btn-text" text-anchor="middle">1</text>
+        <line x1="65" y1="0" x2="155" y2="0" stroke="#6688cc" stroke-width="2" />
+
+        <circle cx="200" cy="0" r="15" fill="#ddd" stroke="#888" />
+        <text x="200" y="5" class="btn-text" text-anchor="middle">2</text>
+        <line x1="215" y1="0" x2="305" y2="0" stroke="#888" stroke-width="1" />
+
+        <circle cx="350" cy="0" r="15" fill="#ddd" stroke="#888" />
+        <text x="350" y="5" class="btn-text" text-anchor="middle">3</text>
+
+        <text x="50" y="25" class="card-text">帳戶</text>
+        <text x="200" y="25" class="card-text">偏好</text>
+        <text x="350" y="25" class="card-text">確認</text>
+      </g>
+      
+      <!-- Form Fields -->
+      <g transform="translate(50,100)">
+        <text x="0" y="0" class="form-label">電子郵件地址</text>
+        <rect x="0" y="10" width="400" height="40" rx="5" class="form-field" />
+        <text x="20" y="35" class="text" fill="#888">您的郵箱@example.com</text>
+        
+        <text x="0" y="80" class="form-label">密碼</text>
+        <rect x="0" y="90" width="400" height="40" rx="5" class="form-field" />
+        <text x="20" y="115" class="text" fill="#888">••••••••••</text>
+        
+        <text x="0" y="160" class="form-label">確認密碼</text>
+        <rect x="0" y="170" width="400" height="40" rx="5" class="form-field" />
+        <text x="20" y="195" class="text" fill="#888">••••••••••</text>
+      </g>
+      
+      <!-- Password Strength -->
+      <g transform="translate(50,320)">
+        <text x="0" y="0" class="form-label">密碼強度</text>
+        <rect x="0" y="10" width="400" height="10" rx="5" fill="#f0f0f0" />
+        <rect x="0" y="10" width="300" height="10" rx="5" fill="#aaccff" />
+      </g>
+      
+      <!-- Submit Button -->
+      <rect x="50" y="350" width="400" height="50" rx="8" class="btn-primary" />
+      <text x="250" y="375" class="btn-text">繼續</text>
+    </g>
+  </g>
+
+  <!-- Footer Section -->
+  <g transform="translate(0,2680)">
+    <rect width="1600" height="400" fill="#1A1F36" />
+    
+    <!-- Footer Logo -->
+    <g transform="translate(200,80)">
+      <path d="M30,0 L60,15 L60,45 L30,60 L0,45 L0,15 Z" class="hexagon-primary" />
+      <text x="120" y="35" class="card-title" text-anchor="middle" fill="white">CryptoTech Pro</text>
+      <text x="0" y="70" class="text" fill="#DEE2E6" width="300">採用AI驅動策略和安全基礎設施的先進加密貨幣投資平台。</text>
+    </g>
+    
+    <!-- Footer Links -->
+    <g transform="translate(200,200)">
+      <g>
+        <text x="0" y="0" class="card-title" fill="white">公司</text>
+        <text x="0" y="30" class="text" fill="#DEE2E6">關於我們</text>
+        <text x="0" y="60" class="text" fill="#DEE2E6">團隊</text>
+        <text x="0" y="90" class="text" fill="#DEE2E6">職位招聘</text>
+        <text x="0" y="120" class="text" fill="#DEE2E6">新聞</text>
+      </g>
+      
+      <g transform="translate(200,0)">
+        <text x="0" y="0" class="card-title" fill="white">產品</text>
+        <text x="0" y="30" class="text" fill="#DEE2E6">投資方案</text>
+        <text x="0" y="60" class="text" fill="#DEE2E6">交易工具</text>
+        <text x="0" y="90" class="text" fill="#DEE2E6">API接口</text>
+        <text x="0" y="120" class="text" fill="#DEE2E6">推薦計劃</text>
+      </g>
+      
+      <g transform="translate(400,0)">
+        <text x="0" y="0" class="card-title" fill="white">資源</text>
+        <text x="0" y="30" class="text" fill="#DEE2E6">部落格</text>
+        <text x="0" y="60" class="text" fill="#DEE2E6">文檔</text>
+        <text x="0" y="90" class="text" fill="#DEE2E6">市場分析</text>
+        <text x="0" y="120" class="text" fill="#DEE2E6">知識庫</text>
+      </g>
+      
+      <g transform="translate(600,0)">
+        <text x="0" y="0" class="card-title" fill="white">法律</text>
+        <text x="0" y="30" class="text" fill="#DEE2E6">服務條款</text>
+        <text x="0" y="60" class="text" fill="#DEE2E6">隱私政策</text>
+        <text x="0" y="90" class="text" fill="#DEE2E6">風險揭露</text>
+        <text x="0" y="120" class="text" fill="#DEE2E6">合規</text>
+      </g>
+      
+      <g transform="translate(800,0)">
+        <text x="0" y="0" class="card-title" fill="white">聯繫</text>
+        <text x="0" y="30" class="text" fill="#DEE2E6">聯絡我們</text>
+        <text x="0" y="60" class="text" fill="#DEE2E6">支援中心</text>
+        <text x="0" y="90" class="text" fill="#DEE2E6">社交媒體</text>
+        <text x="0" y="120" class="text" fill="#DEE2E6">電子報</text>
+      </g>
+    </g>
+    
+    <!-- Copyright -->
+    <line x1="200" y1="340" x2="1400" y2="340" stroke="#444" stroke-width="1" />
+    <text x="800" y="370" class="text" text-anchor="middle" fill="#DEE2E6">© 2023 CryptoTech Pro. 版權所有。</text>
+  </g>
+</svg>
