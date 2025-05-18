@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Area, AreaChart, ResponsiveContainer } from 'recharts';
-import HexLogo from './HexLogo';
+import CryptoLogo from './CryptoLogo';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const btcData = Array(30).fill(0).map((_, i) => ({
@@ -14,7 +14,7 @@ const testimonials = [
     id: 1,
     name: '張先生',
     position: '科技公司經理',
-    image: 'https://randomuser.me/api/portraits/men/32.jpg',
+    image: 'https://randomuser.me/api/portraits/men/92.jpg',
     content: '加入CryptoTech Pro後，我的投資組合表現遠超預期，達到了23.5%的回報率。',
     rating: 5,
     duration: '會員9個月'
@@ -45,9 +45,8 @@ const TrustSection = () => {
 
   return (
     <div className="py-12 sm:py-16">
-      <div className="container mx-auto px-4 sm:px-6">
-        <h2 className="text-3xl font-bold text-center mb-4">為何選擇我們</h2>
-        <div className="w-24 h-2 bg-crypto-blue mx-auto mb-8 sm:mb-12 rounded-full"></div>
+      <h2 className="text-3xl font-bold text-center mb-4">為何選擇我們</h2>
+      <div className="w-24 h-2 bg-crypto-blue mx-auto mb-8 sm:mb-12 rounded-full"></div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           {/* Security */}
@@ -86,11 +85,7 @@ const TrustSection = () => {
           {/* Testimonials */}
           <div>
             <h3 className="text-xl font-bold mb-6 text-center">客戶評價</h3>
-            <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 border relative">
-              <div className="absolute -top-4 -left-4">
-                <HexLogo size="sm" className="animate-pulse-light" />
-              </div>
-              
+            <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 border">
               <div className="mb-4 flex items-center">
                 <img 
                   src={testimonials[activeTestimonial].image} 
@@ -171,7 +166,6 @@ const TrustSection = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };

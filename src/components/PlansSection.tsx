@@ -7,10 +7,9 @@ const PlansSection = () => {
   const isMobile = useIsMobile();
   
   return (
-    <div className="bg-gray-50 py-12 sm:py-16">
-      <div className="container mx-auto px-4 sm:px-6">
-        <h2 className="text-3xl font-bold text-center mb-4">投資方案</h2>
-        <div className="w-24 h-2 bg-crypto-blue mx-auto mb-8 sm:mb-12 rounded-full"></div>
+    <div id="plans" className="bg-gray-50 py-12 sm:py-16">
+      <h2 className="text-3xl font-bold text-center mb-4">投資方案</h2>
+      <div className="w-24 h-2 bg-crypto-blue mx-auto mb-8 sm:mb-12 rounded-full"></div>
         
         <div className="flex flex-col md:flex-row gap-6 justify-center">
           {/* Basic Plan */}
@@ -193,7 +192,6 @@ const PlansSection = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };

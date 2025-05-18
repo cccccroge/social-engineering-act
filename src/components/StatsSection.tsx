@@ -18,8 +18,7 @@ const StatsSection = () => {
   
   return (
     <div className="bg-white py-12 sm:py-16">
-      <div className="container mx-auto px-4 sm:px-6">
-        <h2 className="text-3xl font-bold text-center mb-8 sm:mb-12">平台關鍵指標</h2>
+      <h2 className="text-3xl font-bold text-center mb-8 sm:mb-12">平台關鍵指標</h2>
         
         <div className="flex flex-col md:flex-row gap-6">
           {/* Trading Volume Stat */}
@@ -106,7 +105,6 @@ const StatsSection = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };

@@ -1,16 +1,17 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import HexLogo from './HexLogo';
+import CryptoLogo from './CryptoLogo';
+import Layout from './Layout';
 
 const Footer = () => {
   return (
     <footer className="bg-crypto-darker text-white py-8 sm:py-12">
-      <div className="container mx-auto px-4 sm:px-6">
+      <Layout>
         <div className="flex flex-col md:flex-row justify-between mb-8 sm:mb-12">
           <div className="mb-8 md:mb-0">
             <div className="flex items-center mb-4">
-              <HexLogo size="sm" />
+              <CryptoLogo size="sm" />
               <span className="text-xl font-bold ml-2">CryptoTech Pro</span>
             </div>
             <p className="text-gray-400 max-w-xs mb-4">
@@ -69,7 +70,7 @@ const Footer = () => {
             <Link to="#" className="text-gray-500 hover:text-white">網站地圖</Link>
           </div>
         </div>
-      </div>
+      </Layout>
     </footer>
   );
 };
