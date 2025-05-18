@@ -5,6 +5,7 @@ import { Area, AreaChart, ResponsiveContainer } from 'recharts';
 import { Card } from '@/components/ui/card';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
+import Layout from '@/components/Layout';
 
 const data = [
   { name: 'Jan', price: 34000 },
@@ -34,7 +35,7 @@ const Hero = () => {
         <div className="hexagon bg-crypto-gold bg-opacity-10 w-12 h-12"></div>
       </div>
       
-      <div className="container mx-auto px-4 sm:px-6 z-10">
+      <Layout className="z-10">
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Left column */}
           <div className="flex-1 w-full">
@@ -125,7 +126,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Layout>
     </div>
   );
 };

@@ -6,6 +6,7 @@ import StatsSection from '@/components/StatsSection';
 import PlansSection from '@/components/PlansSection';
 import TrustSection from '@/components/TrustSection';
 import Footer from '@/components/Footer';
+import Layout from '@/components/Layout';
 
 const HomePage = () => {
   return (
@@ -13,9 +14,11 @@ const HomePage = () => {
       <Navbar />
       <Hero />
       <div className="bg-white text-gray-900">
-        <StatsSection />
-        <PlansSection />
-        <TrustSection />
+        <Layout>
+          <StatsSection />
+          <PlansSection />
+          <TrustSection />
+        </Layout>
       </div>
       <Footer />
     </div>
