@@ -1,0 +1,513 @@
+/* 監理服務網樣式表 */
+
+/* 基本重置和字體設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft JhengHei", "PMingLiU", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/* 頁面佈局 */
+.header {
+    background: #ffffff url('../images/header_bk.jpg') repeat-x;
+    border-bottom: 1px solid #ddd;
+}
+
+.header_tb {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.topmenu {
+    font-size: 11px;
+    color: #666;
+    padding: 5px 0;
+    text-align: right;
+}
+
+.topmenu a {
+    color: #0066cc;
+    margin: 0 3px;
+}
+
+/* Header layout improvements */
+.header_tb td {
+    vertical-align: top;
+}
+
+.header_tb td:first-child {
+    width: 280px;
+    vertical-align: middle;
+}
+
+.header_tb td:last-child {
+    width: auto;
+    text-align: right;
+    vertical-align: top;
+}
+
+/* Top menu and button alignment */
+.topmenu {
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+/* Button container alignment */
+.header_tb table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.header_tb table td {
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    line-height: 0;
+}
+
+.header_tb table td:first-child {
+    text-align: right;
+    width: auto;
+}
+
+.header_tb table td:last-child {
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* Button hover effects */
+.top_btn_login:hover {
+    content: url('../images/top_btn_login_over.jpg');
+}
+
+.top_btn_join:hover {
+    content: url('../images/top_btn_join_over.jpg');
+}
+
+/* 選單區域 */
+.menu {
+    background: #4a6fa5 url('../images/menu_bk.jpg') repeat-x;
+    border-bottom: 2px solid #2c4c82;
+    padding: 0;
+}
+
+.menu table {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu_item {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 15px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu_item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.menu_item_active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 3px solid #ffdd00;
+}
+
+.search_bar {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.search_ipt {
+    padding: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    width: 120px;
+}
+
+/* 主要內容區域 */
+.gap_b2 {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    min-height: 500px;
+}
+
+/* 麵包屑 */
+.breadcrumb {
+    padding: 10px 0;
+    font-size: 12px;
+    color: #666;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.breadcrumb a {
+    color: #0066cc;
+}
+
+/* 頁面標題 */
+h1 {
+    font-size: 20px;
+    color: #2c4c82;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #2c4c82;
+    position: relative;
+}
+
+.headline_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.print_btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 11px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.print_btn:hover {
+    background-color: #e0e0e0;
+    text-decoration: none;
+}
+
+/* 警告訊息框 */
+.cont80 {
+    margin: 15px 0;
+}
+
+.msg_box_warning {
+    background-color: #fff8dc;
+    border: 2px solid #ffaa00;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.msg_box_warning p {
+    margin: 0;
+    line-height: 1.5;
+    color: #cc6600;
+    font-weight: bold;
+}
+
+.gap_b {
+    margin-bottom: 15px;
+}
+
+/* 步驟指示器 */
+.tb_step {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.tb_step td {
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.step_on {
+    background-color: #4a90e2;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.step_off {
+    background-color: #f0f0f0;
+    color: #999;
+}
+
+/* 頁籤區域 */
+.tab_frame {
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #ffffff;
+    padding: 20px;
+    min-height: 300px;
+}
+
+.tab_cont {
+    display: block;
+}
+
+/* 表單樣式 */
+.form_table {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.form_table th {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: right;
+    font-weight: bold;
+    width: 150px;
+    vertical-align: top;
+}
+
+.form_table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.ipt_std {
+    border: 1px solid #ccc;
+    padding: 6px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+.form_tiny {
+    width: 120px;
+}
+
+.ipt_std:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 3px rgba(74, 144, 226, 0.3);
+}
+
+.note {
+    color: #666;
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+.calendar_icon {
+    cursor: pointer;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* 錯誤訊息 */
+.error_msg {
+    color: #cc0000;
+    font-size: 11px;
+    margin-left: 10px;
+    display: block;
+    margin-top: 3px;
+}
+
+/* 按鈕樣式 */
+.align_c {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.std_btn {
+    background: linear-gradient(to bottom, #ff9933, #ff6600);
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.std_btn:hover {
+    background: linear-gradient(to bottom, #ff6600, #ff3300);
+    border-color: #cc0000;
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 側邊欄 */
+.side_box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.side_box_cont {
+    padding: 15px;
+}
+
+.side_title {
+    background-color: #f0f4f8;
+    color: #2c4c82;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 12px;
+    margin: -15px -15px 10px -15px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+}
+
+.gap_l2 {
+    list-style: none;
+    padding: 0;
+}
+
+.gap_l2 li {
+    padding: 3px 0;
+    border-bottom: 1px dotted #ddd;
+}
+
+.gap_l2 li:last-child {
+    border-bottom: none;
+}
+
+.gap_l2 a {
+    color: #0066cc;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.gap_l2 a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background: #f0f0f0 url('../images/footer_bk.jpg') repeat-x;
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer_text {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 11px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.footer_text a {
+    color: #0066cc;
+}
+
+.feedback_btn {
+    margin-top: 15px;
+}
+
+.feedback_btn a {
+    background-color: #4a90e2;
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.feedback_btn a:hover {
+    background-color: #357abd;
+    text-decoration: none;
+}
+
+/* 驗證碼區域 */
+#captcha_img {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+/* 日期輸入樣式 */
+.date_input {
+    margin-right: 10px;
+}
+
+#birthday_roc {
+    background-color: #f9f9f9;
+    color: #666;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .header_tb,
+    .menu table,
+    .gap_b2 {
+        width: 100%;
+        max-width: none;
+        padding: 0 10px;
+    }
+
+    .form_table th,
+    .form_table td {
+        display: block;
+        width: 100%;
+    }
+
+    .form_table th {
+        text-align: left;
+        background-color: transparent;
+        border-bottom: none;
+        padding-bottom: 5px;
+    }
+
+    .headline_btn {
+        position: static;
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}
+
+/* 工具提示和隱藏元素 */
+.hidden {
+    display: none;
+}
+
+/* 動畫效果 */
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
