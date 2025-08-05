@@ -368,3 +368,8 @@ function preventDoubleSubmit() {
     
     return true;
 }
+
+// 導航到查詢頁面
+function goToQueryPage() {
+    window.location.href = 'query.html';
+}
